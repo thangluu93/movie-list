@@ -16,7 +16,6 @@ export class MovieService {
 
   async findAllMovie(limit, offset): Promise<MovieDocument[]> {
     try {
-      console.log(typeof limit,typeof offset);
       return await this.movieModel.find(
       ).limit(limit).skip(offset).exec();
     } catch (error) {
