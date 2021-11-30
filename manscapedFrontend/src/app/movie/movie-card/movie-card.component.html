@@ -1,0 +1,15 @@
+<div class="cover-movie col-2 col-md-3">
+  <div class="header-movie">
+    <span>{{movie.title}}</span>
+  </div>
+  <div class="cover-img">
+    <img src="{{movie.poster}}" alt="{{movie.title}}">
+  </div>
+  <div class="cover-cast">
+    <span>Cast</span>
+    <ul>
+      <li *ngFor="let cast of movie.cast">{{cast}}</li>
+    </ul>
+  </div>
+
+</div>
